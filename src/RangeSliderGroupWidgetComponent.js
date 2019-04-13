@@ -20,22 +20,17 @@ class RangeSliderGroupComponent extends React.Component {
 
   }
 
-
-
-  render() {
+render() {
     const widget = this.props.widget;
     const items = widget.get('items');
 
-
-
-    /*if (!items.length) {
+    if (!items.length && Scrivito.isInPlaceEditingActive()) {
       return (
-        <InPlaceEditingPlaceholder center={ true }>
-          Create range slider in the widget properties.
-        </InPlaceEditingPlaceholder>
+          <h4 className="text-center">
+            Provide the range slider values in the widget properties.
+          </h4>
       );
-    }*/
-
+    }
 
       return (
 
