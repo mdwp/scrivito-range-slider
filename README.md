@@ -21,6 +21,15 @@ Add this line to your index.js:
 import "scrivito-range-slider";
 ```
 
+Also add this line to your index.scss:
+
+```scss
+Or by including the styling to your style sheets (e.g. in `index.scss`):
+
+```scss
+@import "~react-input-range/lib/css/index.css"
+```
+
 ## Features
 For demonstration purposes I've setup a widget configuration form to create conversions calcutators, like km to miles, kilograms to pounds and so on. Just put in the factor in the form, enter labels and descriptions and you will get a range slider which works as a conversion calculator. You can also use it as a price calculator.
 
