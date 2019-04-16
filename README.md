@@ -9,7 +9,7 @@ Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```
+```shell
 $ npm install scrivito-range-slider
 ```
 
@@ -17,14 +17,11 @@ Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
 
 Add this line to your index.js:
 
-```
+```js
 import "scrivito-range-slider";
 ```
 
 Also add this line to your index.scss:
-
-```scss
-Or by including the styling to your style sheets (e.g. in `index.scss`):
 
 ```scss
 @import "~react-input-range/lib/css/index.css"
@@ -33,30 +30,12 @@ Or by including the styling to your style sheets (e.g. in `index.scss`):
 ## Features
 For demonstration purposes I've setup a widget configuration form to create conversions calcutators, like km to miles, kilograms to pounds and so on. Just put in the factor in the form, enter labels and descriptions and you will get a range slider which works as a conversion calculator. You can also use it as a price calculator.
 
-## Development
+## Widget properties
 
-With `npm run build` you can build the package into `build/`.
-
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-range-slider/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
-
-## Check code quality
-
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
+In the widget properties you can set:
+- Title e.g. "Miles to Kilometers"
+- Minimum e.g. 1
+- Maximum e.g. 100
+- Base entity e.g. Miles
+- Target entity e.g. Kilometers
+- Factor e.g. 1.609344
