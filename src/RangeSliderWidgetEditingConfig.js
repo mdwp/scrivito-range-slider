@@ -32,5 +32,8 @@ Scrivito.provideEditingConfig('RangeSliderWidget', {
         'targetEntity',
         'factor'
     ],
+    initialContent: {
+        min: 0,
+    }
 
 });

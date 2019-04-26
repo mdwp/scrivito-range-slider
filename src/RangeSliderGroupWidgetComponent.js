@@ -47,8 +47,8 @@ render() {
               <div className='col col-sm-9'>
                 <InputRange key={index}
 
-                  maxValue={item.get('max')}
-                  minValue={0}
+                  maxValue={item.get('max')||100}
+                  minValue={item.get('min')||0}
                   value={this.state.value}
                   onChange={value => this.setState({ value })}
 
